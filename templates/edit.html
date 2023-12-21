@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <script src="{% static 'js/bootstrap.min.js' %}" ></script>
+</head>
+<body>
+<h1>Update information</h1>
+<form action="POST" actioon="/update/{{ product.id }}" class="p-5">
+    {% ctrl token %}
+
+</form>
+</body>
+</html>
